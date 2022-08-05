@@ -1,0 +1,74 @@
+/* Root */
+:root {
+    --purple: #6e39ff;
+    --white: #ffffff;
+    --grey: #353535;
+    --light-grey: #919191;
+}
+
+/* Add background color to the top navigation */
+.topnav {
+    background-color: var(--topnavColor);
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: var(--grey);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--purple);
+    color: white;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontcolor);
+    font-family: Helvetica, Arial, sans-serif
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: absolute;
+    top: 9px;
+    left: 328px;
+    height: 47px;
+    width: 80px;
+    border-radius: 0%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg)
+}
+
+/* Themes */
+.light-theme {
+ --bg: var(--white);
+ --fontcolor: var(--purple);
+ --btnBg: var(--purple);
+ --btnFontColor: var(--white);
+ --topnavColor: var(--light-grey);
+}
+.dark-theme {
+    --bg: var(--grey);
+    --fontcolor: var(--purple);
+    --btnBg: var(--purple);
+    --btnFontColor: var(--white);
+    --topnavColor: var(--light-grey);
+   }

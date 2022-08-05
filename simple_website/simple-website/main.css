@@ -1,0 +1,46 @@
+/* Root */
+:root {
+    --purple: #6e39ff;
+    --white: #ffffff;
+    --grey: #353535;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontcolor);
+    font-family: Helvetica, Arial, sans-serif
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg)
+}
+
+/* Themes */
+.light-theme {
+ --bg: var(--white);
+ --fontcolor: var(--purple);
+ --btnBg: var(--purple);
+ --btnFontColor: var(var(--white))
+}
+.dark-theme {
+    --bg: var(--grey);
+    --fontcolor: var(--purple);
+    --btnBg: var(--purple);
+    --btnFontColor: var(var(--white))
+   }

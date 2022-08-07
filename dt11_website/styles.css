@@ -1,0 +1,79 @@
+/* General Definitions */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    --BG-Colour: #141414;
+    --AccentColourPink: #ff84d6;
+    --AccentColourPurple: #c851ff;
+}
+
+.navbar {
+    background: var(--BG-Colour);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.logo__container {
+    display: flex;
+    background-size: 100%;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,var(--AccentColourPink) 0%,var(--AccentColourPurple) 100%);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 60px;
+    margin-top: 10px;
+
+}
+
+#logo__img {
+    display: flex;
+    transform: scale(0.75);
+    align-items: center;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;  
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    display: table;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar__links:hover {
+    color: var(--AccentColourPink);
+    transition: all 0.25s ease-in-out;
+}
+
+
+

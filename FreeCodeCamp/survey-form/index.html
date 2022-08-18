@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Website Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="title">Luke Survey Form</h1>
+            <p id="description">Thank you for taking the time to help improve me</p>
+        </div>
+        <form id="survey-form">
+            <fieldset id="text-fields">
+                <label id="name-label">Name
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </label>
+                <label id="email-label">Email
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </label>
+                <label id="number-label">Age (Optional)
+                    <input type="number" id="number" placeholder="Age" min="13" max="120">
+                </label>
+            </fieldset>
+            <fieldset  id="selector">
+                <label>Which option best describes your relationship to Luke?
+                    <select id="dropdown">
+                        <option class="grey-out">Select One</option>
+                        <option>Family Member</option>
+                        <option>Friend</option>
+                        <option>Work Colleague</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset id="buttons">
+                <label>Would you recommend Luke to a friend?</label>
+                <div id="radios">
+                    <label>
+                        <input type="radio" name="recommend" value="1">Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="2">Not sure
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="2">No
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset id="checkboxes">
+                <label>What would you like to see improved? (Check all that apply)</label>
+                <div id="checks">
+                    <label>
+                        <input type="checkbox" value="1">Friendliness
+                    </label>
+                    <label>
+                        <input type="checkbox" value="2">Humour
+                    </label>
+                    <label>
+                        <input type="checkbox" value="2">Style
+                    </label>
+                    <label>
+                        <input type="checkbox" value="2">Mindset
+                    </label>
+                    <label>
+                        <input type="checkbox" value="2">Knowledge
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset id="comments">
+                <label> Any comments or suggestions?
+                    <textarea rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+                </label>
+            </fieldset>
+                <input id="submit" type="submit">
+        </form>
+    </body>
+</html>
